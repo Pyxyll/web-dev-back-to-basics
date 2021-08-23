@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
 body {
   background-color: #2f3640;
   font-family: "Poppins", Arial, sans-serif;
@@ -12,13 +24,59 @@ h2 {
 
 h1 {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 h2 {
   font-size: 25px;
+  margin-bottom: 10px;
 }
 
-p,
-a {
-  text-align: justify;
+.text-body, .author, a{
+  color: #e9e9e9;
 }
+
+.text-body {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-size: 22px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.container {
+  width: 1140px;
+  margin: 20px auto 0px auto;
+}
+
+.content {
+  width: 75%;
+  float: left;
+  padding-right: 30px;
+}
+
+.other-posts {
+  width: 25%;
+  float: left;
+}
+
+.author-box {
+  padding-top: 20px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.author-box img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+}
+
+.other {
+  margin-bottom: 40px;
+}
+
